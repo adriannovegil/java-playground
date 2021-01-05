@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.devcircus.java.algorithms.maths.geometry;
 
 import org.junit.After;
@@ -10,15 +5,14 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
- * @author adrian
+ * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class AreaTest {
+public class RectangleTest {
     
-    public AreaTest() {
+    public RectangleTest() {
     }
     
     @BeforeClass
@@ -36,4 +30,13 @@ public class AreaTest {
     @After
     public void tearDown() {
     }
+
+    /**
+     * Test of surfaceAreaRectangle method, of class Rectangle.
+     */
+    @Test
+    public void testSurfaceAreaRectangle() {
+        assert Double.compare(Rectangle.surfaceAreaRectangle(10, 20), 200.0) == 0;
+    }
+    
 }
