@@ -32,8 +32,8 @@ public class SphereTest {
     }
 
     @Test
-    public void testSurfaceAreaSphere() {
-        assert Double.compare(Sphere.surfaceAreaSphere(5), 314.1592653589793) == 0;
-        assert Double.compare(Sphere.surfaceAreaSphere(1), 12.566370614359172) == 0;
+    public void testArea() {
+        assert Double.compare(Sphere.area(5), 314.1592653589793) == 0;
+        assert Double.compare(Sphere.area(1), 12.566370614359172) == 0;
     }
 }

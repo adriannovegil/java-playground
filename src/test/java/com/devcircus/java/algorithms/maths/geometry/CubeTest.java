@@ -32,7 +32,7 @@ public class CubeTest {
     }
 
     @Test
-    public void testSurfaceAreaCube() {
-        assert Double.compare(Cube.surfaceAreaCube(1), 6.0) == 0;
+    public void testArea() {
+        assert Double.compare(Cube.area(1), 6.0) == 0;
     }
 }

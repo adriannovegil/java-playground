@@ -32,7 +32,7 @@ public class RectangleTest {
     }
 
     @Test
-    public void testSurfaceAreaRectangle() {
-        assert Double.compare(Rectangle.surfaceAreaRectangle(10, 20), 200.0) == 0;
+    public void testArea() {
+        assert Double.compare(Rectangle.area(10, 20), 200.0) == 0;
     }
 }

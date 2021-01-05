@@ -6,7 +6,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Parallelogram {
 
-    public static double surfaceAreaParallelogram(double base, double height) {
+    public static double area(double base, double height) {
         return base * height;
     }
 }

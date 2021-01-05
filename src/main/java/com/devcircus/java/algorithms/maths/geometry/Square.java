@@ -6,7 +6,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Square {
 
-    public static double surfaceAreaSquare(double sideLength) {
+    public static double area(double sideLength) {
         return sideLength * sideLength;
     }
 }

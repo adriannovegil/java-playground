@@ -32,7 +32,7 @@ public class CircleTest {
     }
 
     @Test
-    public void testSurfaceAreaCircle() {
-        assert Double.compare(Circle.surfaceAreaCircle(20), 1256.6370614359173) == 0;
+    public void testArea() {
+        assert Double.compare(Circle.area(20), 1256.6370614359173) == 0;
     }
 }

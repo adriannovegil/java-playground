@@ -6,7 +6,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Rectangle {
 
-    public static double surfaceAreaRectangle(double length, double width) {
+    public static double area(double length, double width) {
         return length * width;
     }
 }

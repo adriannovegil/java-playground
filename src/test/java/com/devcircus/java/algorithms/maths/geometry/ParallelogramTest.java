@@ -32,7 +32,7 @@ public class ParallelogramTest {
     }
 
     @Test
-    public void testSurfaceAreaParallelogram() {
-        assert Double.compare(Parallelogram.surfaceAreaParallelogram(10, 20), 200.0) == 0;
+    public void testArea() {
+        assert Double.compare(Parallelogram.area(10, 20), 200.0) == 0;
     }
 }

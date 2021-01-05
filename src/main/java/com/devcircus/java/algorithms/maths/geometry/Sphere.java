@@ -6,7 +6,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Sphere {
 
-    public static double surfaceAreaSphere(double radius) {
+    public static double area(double radius) {
         return 4 * Math.PI * radius * radius;
     }
 }

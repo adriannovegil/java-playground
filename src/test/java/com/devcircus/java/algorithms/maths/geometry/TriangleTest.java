@@ -32,7 +32,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void testSurfaceAreaTriangle() {
-        assert Double.compare(Triangle.surfaceAreaTriangle(10, 10), 50.0) == 0;
+    public void testArea() {
+        assert Double.compare(Triangle.area(10, 10), 50.0) == 0;
     }
 }
