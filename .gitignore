@@ -21,6 +21,11 @@ npm-debug.log.*
 .sass-cache/
 
 ######################
+# Netbeans
+######################
+/nbproject/
+
+######################
 # Eclipse
 ######################
 *.pydevproject
