@@ -6,12 +6,6 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Circle {
 
-    /**
-     * Calculate the area of a circle
-     *
-     * @param radius radius of circle
-     * @return area of given circle
-     */
     public static double surfaceAreaCircle(double radius) {
         return Math.PI * radius * radius;
     }

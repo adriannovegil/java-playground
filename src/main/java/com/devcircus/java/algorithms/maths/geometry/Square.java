@@ -6,12 +6,6 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Square {
 
-    /**
-     * Calculate the area of a square
-     *
-     * @param sideLength side length of square
-     * @return area of given square
-     */
     public static double surfaceAreaSquare(double sideLength) {
         return sideLength * sideLength;
     }

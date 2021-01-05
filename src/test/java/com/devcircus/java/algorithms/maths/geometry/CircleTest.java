@@ -11,32 +11,28 @@ import org.junit.Test;
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
 public class CircleTest {
-    
+
     public CircleTest() {
     }
-    
+
     @BeforeClass
     public static void setUpClass() {
     }
-    
+
     @AfterClass
     public static void tearDownClass() {
     }
-    
+
     @Before
     public void setUp() {
     }
-    
+
     @After
     public void tearDown() {
     }
 
-    /**
-     * Test of surfaceAreaCircle method, of class Circle.
-     */
     @Test
     public void testSurfaceAreaCircle() {
         assert Double.compare(Circle.surfaceAreaCircle(20), 1256.6370614359173) == 0;
     }
-    
 }
