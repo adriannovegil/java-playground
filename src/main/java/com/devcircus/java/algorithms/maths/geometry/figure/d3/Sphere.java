@@ -1,13 +1,15 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d3;
+
+import com.devcircus.java.algorithms.maths.geometry.figure.Figure;
 
 /**
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Sphere extends Shape{
+public class Sphere extends Figure {
 
     private double radius;
-    
+
     public Sphere(double radius) {
         this.radius = radius;
     }

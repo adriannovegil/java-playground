@@ -1,10 +1,12 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d2;
+
+import com.devcircus.java.algorithms.maths.geometry.figure.Figure;
 
 /**
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Circle extends Shape{
+public class Circle extends Figure{
 
     private double radius;
 

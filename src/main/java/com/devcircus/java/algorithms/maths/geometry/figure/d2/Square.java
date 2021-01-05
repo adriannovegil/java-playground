@@ -1,13 +1,15 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d2;
+
+import com.devcircus.java.algorithms.maths.geometry.figure.Figure;
 
 /**
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Square extends Shape{
+public class Square extends Figure {
 
     private double sideLength;
-    
+
     public Square(double sideLength) {
         this.sideLength = sideLength;
     }

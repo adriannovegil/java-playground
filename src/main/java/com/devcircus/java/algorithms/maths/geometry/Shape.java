@@ -6,6 +6,4 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public abstract class Shape {
     
-    public abstract double area();
-    
 }

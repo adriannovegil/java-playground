@@ -1,5 +1,6 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d2;
 
+import com.devcircus.java.algorithms.maths.geometry.figure.d2.Triangle;
 import org.junit.Test;
 
 /**

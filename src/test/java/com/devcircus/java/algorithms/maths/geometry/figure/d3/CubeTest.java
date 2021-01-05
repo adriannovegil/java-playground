@@ -1,5 +1,6 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d3;
 
+import com.devcircus.java.algorithms.maths.geometry.figure.d3.Cube;
 import org.junit.Test;
 
 /**

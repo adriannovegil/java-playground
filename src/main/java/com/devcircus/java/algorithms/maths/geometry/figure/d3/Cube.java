@@ -1,13 +1,15 @@
-package com.devcircus.java.algorithms.maths.geometry;
+package com.devcircus.java.algorithms.maths.geometry.figure.d3;
+
+import com.devcircus.java.algorithms.maths.geometry.figure.Figure;
 
 /**
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Cube extends Shape{
+public class Cube extends Figure {
 
     private double sideLength;
-    
+
     public Cube(double sideLength) {
         this.sideLength = sideLength;
     }
