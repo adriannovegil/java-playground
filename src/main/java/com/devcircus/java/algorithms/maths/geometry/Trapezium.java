@@ -6,7 +6,17 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Trapezium {
 
-    public static double area(double base1, double base2, double height) {
-        return (base1 + base2) * height / 2;
+    private double topSide;
+    private double bottomSide;
+    private double height;
+    
+    public Trapezium(double topSide, double bottomSide, double height) {
+        this.topSide = topSide;
+        this.bottomSide = bottomSide;
+        this.height = height;
+    }
+
+    public double area() {
+        return (topSide + bottomSide) * height / 2;
     }
 }

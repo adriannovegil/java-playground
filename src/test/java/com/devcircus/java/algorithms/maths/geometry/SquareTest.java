@@ -33,6 +33,7 @@ public class SquareTest {
 
     @Test
     public void testArea() {
-        assert Double.compare(Square.area(10), 100.0) == 0;
+        Square square = new Square(10);
+        assert Double.compare(square.area(), 100.0) == 0;
     }
 }

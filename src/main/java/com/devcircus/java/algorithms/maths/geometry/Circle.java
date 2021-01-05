@@ -6,7 +6,13 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Circle {
 
-    public static double area(double radius) {
+    private double radius;
+
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double area() {
         return Math.PI * radius * radius;
     }
 }

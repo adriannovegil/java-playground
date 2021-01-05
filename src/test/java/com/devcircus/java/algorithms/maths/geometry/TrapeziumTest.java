@@ -33,6 +33,7 @@ public class TrapeziumTest {
 
     @Test
     public void testArea() {
-        assert Double.compare(Trapezium.area(10, 20, 30), 450.0) == 0;
+        Trapezium trapezium = new Trapezium(10, 20, 30);
+        assert Double.compare(trapezium.area(), 450.0) == 0;
     }
 }

@@ -6,7 +6,13 @@ package com.devcircus.java.algorithms.maths.geometry;
  */
 public class Cube {
 
-    public static double area(double sideLength) {
+    private double sideLength;
+    
+    public Cube(double sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    public double area() {
         return 6 * sideLength * sideLength;
     }
 }
