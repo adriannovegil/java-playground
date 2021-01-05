@@ -6,7 +6,7 @@ import com.devcircus.java.algorithms.maths.geometry.figure.Figure;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Circle extends Figure{
+public class Circle extends Figure {
 
     private double radius;
 

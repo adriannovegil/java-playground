@@ -1,6 +1,5 @@
 package com.devcircus.java.algorithms.maths.geometry.figure.d2;
 
-import com.devcircus.java.algorithms.maths.geometry.figure.d2.Rectangle;
 import org.junit.Test;
 
 /**

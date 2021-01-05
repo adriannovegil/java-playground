@@ -1,6 +1,5 @@
 package com.devcircus.java.algorithms.maths.geometry.figure.d2;
 
-import com.devcircus.java.algorithms.maths.geometry.figure.d2.Square;
 import org.junit.Test;
 
 /**
