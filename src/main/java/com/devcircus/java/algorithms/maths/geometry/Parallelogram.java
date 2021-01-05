@@ -4,7 +4,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Parallelogram {
+public class Parallelogram extends Shape{
 
     private double base;
     private double height;
@@ -14,6 +14,7 @@ public class Parallelogram {
         this.height = height;
     }
 
+    @Override
     public double area() {
         return base * height;
     }

@@ -4,7 +4,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Rectangle {
+public class Rectangle extends Shape{
 
     private double length;
     private double width;
@@ -14,6 +14,7 @@ public class Rectangle {
         this.width = width;
     }
 
+    @Override
     public double area() {
         return length * width;
     }

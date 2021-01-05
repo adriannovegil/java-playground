@@ -4,7 +4,7 @@ package com.devcircus.java.algorithms.maths.geometry;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class Trapezium {
+public class Trapezium extends Shape{
 
     private double topSide;
     private double bottomSide;
@@ -16,6 +16,7 @@ public class Trapezium {
         this.height = height;
     }
 
+    @Override
     public double area() {
         return (topSide + bottomSide) * height / 2;
     }
