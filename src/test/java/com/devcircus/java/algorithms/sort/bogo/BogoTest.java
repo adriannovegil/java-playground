@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
 public class BogoTest {
-    
+
     @Test
     public void testSortWithIntegers() {
         Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
@@ -16,7 +16,7 @@ public class BogoTest {
         Bogo bogoSort = new Bogo();
         assertArrayEquals(bogoSort.sort(integers), expectedIntegers);
     }
-        
+
     @Test
     public void testSortWithStrings() {
         String[] strings = {"c", "a", "e", "b", "d"};
