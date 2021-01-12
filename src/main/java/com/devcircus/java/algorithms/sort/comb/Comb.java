@@ -25,12 +25,4 @@ class Comb implements SortAlgorithm {
         gap = (gap * 10) / 13;
         return (gap < 1) ? 1 : gap;
     }
-
-    public static void main(String[] args) {
-        Comb ob = new Comb();
-        Integer[] arr = {8, 4, 1, 56, 3, -44, -1, 0, 36, 34, 8, 12, -66, -78, 23, -6, 28, 0};
-        ob.sort(arr);
-        System.out.println("sorted array");
-        SortUtils.print(arr);
-    }
 }

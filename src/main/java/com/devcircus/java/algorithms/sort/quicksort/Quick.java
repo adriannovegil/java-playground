@@ -42,14 +42,4 @@ class Quick implements SortAlgorithm {
         }
         return left;
     }
-
-    public static void main(String[] args) {
-        Integer[] array = {3, 4, 1, 32, 0, 1, 5, 12, 2, 5, 7, 8, 9, 2, 44, 111, 5};
-        Quick quickSort = new Quick();
-        quickSort.sort(array);
-        SortUtils.print(array);
-        String[] stringArray = {"c", "a", "e", "b", "d"};
-        quickSort.sort(stringArray);
-        SortUtils.print(stringArray);
-    }
 }

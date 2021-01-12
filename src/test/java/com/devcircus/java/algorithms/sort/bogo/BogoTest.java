@@ -1,5 +1,6 @@
 package com.devcircus.java.algorithms.sort.bogo;
 
+import com.devcircus.java.algorithms.sort.BaseSortTest;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -8,29 +9,22 @@ import org.junit.Before;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class BogoTest {
+public class BogoTest extends BaseSortTest{
 
-    private final Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-    private final Integer[] expectedIntegers = {1, 4, 6, 9, 12, 23, 54, 78, 231};
-    private final String[] strings = {"c", "a", "e", "b", "d"};
-    private final String[] expectedStrings = {"a", "b", "c", "d", "e"};
-
-    private Bogo bogo;
+    private Bogo sortter;
 
     @Before
     public void setUp() {
-        bogo = new Bogo();
+        sortter = new Bogo();
     }
 
     @Test
     public void testSortWithIntegers() {
-        Bogo bogoSort = new Bogo();
-        assertArrayEquals(bogo.sort(integers), expectedIntegers);
+        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
     }
 
     @Test
     public void testSortWithStrings() {
-        Bogo bogoSort = new Bogo();
-        assertArrayEquals(bogo.sort(strings), expectedStrings);
+        assertArrayEquals(sortter.sort(getStringArrayToSort()), getSortedStringArray());
     }
 }

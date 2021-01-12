@@ -20,15 +20,4 @@ class Bubble implements SortAlgorithm {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        // Integer Input
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Bubble bubbleSort = new Bubble();
-        bubbleSort.sort(integers);
-        SortUtils.print(integers);
-        // String Input
-        String[] strings = {"c", "a", "e", "b", "d"};
-        SortUtils.print(bubbleSort.sort(strings));
-    }
 }

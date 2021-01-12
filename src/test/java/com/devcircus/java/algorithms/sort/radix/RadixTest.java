@@ -1,5 +1,6 @@
 package com.devcircus.java.algorithms.sort.radix;
 
+import com.devcircus.java.algorithms.sort.BaseSortTest;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -8,21 +9,19 @@ import org.junit.Before;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-class RadixTest {
+class RadixTest extends BaseSortTest{
 
+    private Radix sortter;
+    
     @Before
     public void setUp() {
+        sortter = new Radix();
     }
     
     @Test
     public void testSortWithIntegers() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    @Test
-    public void testSortWithStrings() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        Integer [] arrayToSort = getIntegerArrayToSort();
+        int arrayToSortLenght = arrayToSort.length;
+        assertArrayEquals(sortter.sort(arrayToSort, arrayToSortLenght), getSortedIntegerArray());
     }
 }

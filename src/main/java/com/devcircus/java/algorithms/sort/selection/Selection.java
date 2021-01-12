@@ -26,14 +26,4 @@ public class Selection implements SortAlgorithm {
         arr[i] = arr[j];
         arr[j] = temp;
     }
-
-    public static void main(String[] args) {
-        Integer[] arr = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Selection selectionSort = new Selection();
-        Integer[] sorted = selectionSort.sort(arr);
-        SortUtils.print(sorted);
-        String[] strings = {"c", "a", "e", "b", "d"};
-        String[] sortedStrings = selectionSort.sort(strings);
-        SortUtils.print(sortedStrings);
-    }
 }

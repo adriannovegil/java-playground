@@ -17,14 +17,4 @@ class Insertion implements SortAlgorithm {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Insertion sort = new Insertion();
-        sort.sort(integers);
-        SortUtils.print(integers);
-        String[] strings = {"c", "a", "e", "b", "d"};
-        sort.sort(strings);
-        SortUtils.print(strings);
-    }
 }

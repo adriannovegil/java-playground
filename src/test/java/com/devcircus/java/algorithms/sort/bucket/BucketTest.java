@@ -1,5 +1,6 @@
 package com.devcircus.java.algorithms.sort.bucket;
 
+import com.devcircus.java.algorithms.sort.BaseSortTest;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -8,21 +9,17 @@ import org.junit.Before;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class BucketTest {
+public class BucketTest extends BaseSortTest{
 
+    private Bucket sortter;
+    
     @Before
     public void setUp() {
+        sortter = new Bucket();
     }
     
     @Test
     public void testSortWithIntegers() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
-    }
-
-    @Test
-    public void testSortWithStrings() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
     }
 }

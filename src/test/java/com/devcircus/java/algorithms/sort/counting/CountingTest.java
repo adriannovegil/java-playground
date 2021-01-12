@@ -1,5 +1,6 @@
 package com.devcircus.java.algorithms.sort.counting;
 
+import com.devcircus.java.algorithms.sort.BaseSortTest;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -8,21 +9,22 @@ import org.junit.Before;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class CountingTest {
+public class CountingTest extends BaseSortTest{
 
+    private Counting sortter;
+    
     @Before
     public void setUp() {
+        sortter =  new Counting();
     }
     
     @Test
     public void testSortWithIntegers() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
     }
-    
+
     @Test
     public void testSortWithStrings() {
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertArrayEquals(sortter.sort(getStringArrayToSort()), getSortedStringArray());
     }
 }

@@ -1,13 +1,11 @@
 package com.devcircus.java.algorithms.sort.counting;
 
 import com.devcircus.java.algorithms.sort.SortAlgorithm;
-import com.devcircus.java.algorithms.sort.SortUtils;
 import static java.util.stream.Collectors.toList;
 import static java.util.stream.Collectors.toMap;
 
 import java.util.*;
 import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 class Counting implements SortAlgorithm {
 
@@ -34,26 +32,5 @@ class Counting implements SortAlgorithm {
                 .stream()
                 .flatMap(entry -> IntStream.rangeClosed(1, entry.getValue()).mapToObj(t -> entry.getKey()))
                 .collect(toList());
-    }
-
-    public static void main(String[] args) {
-        List<Integer> unsortedInts
-                = Stream.of(4, 23, 6, 78, 1, 54, 23, 1, 9, 231, 9, 12).collect(toList());
-        Counting countingSort = new Counting();
-        System.out.println("Before Sorting:");
-        SortUtils.print(unsortedInts);
-        System.out.println("After Sorting:");
-        SortUtils.print(countingSort.sort(unsortedInts));
-        System.out.println("After Sorting By Streams:");
-        SortUtils.print(streamSort(unsortedInts));
-        System.out.println("\n------------------------------\n");
-        List<String> unsortedStrings
-                = Stream.of("c", "a", "e", "b", "d", "a", "f", "g", "c").collect(toList());
-        System.out.println("Before Sorting:");
-        SortUtils.print(unsortedStrings);
-        System.out.println("After Sorting:");
-        SortUtils.print(countingSort.sort(unsortedStrings));
-        System.out.println("After Sorting By Streams:");
-        SortUtils.print(streamSort(unsortedStrings));
     }
 }

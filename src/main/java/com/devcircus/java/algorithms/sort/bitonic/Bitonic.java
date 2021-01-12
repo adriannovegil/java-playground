@@ -4,30 +4,12 @@ import com.devcircus.java.algorithms.sort.SortAlgorithm;
 
 public class Bitonic implements SortAlgorithm {
 
-    void sort(int a[], int N, int up) {
+    public Integer[] sort(Integer a[], int N, int up) {
         bitonicSort(a, 0, N, up);
-    }
-    
-    void compAndSwap(int a[], int i, int j, int dir) {
-        if ((a[i] > a[j] && dir == 1) || (a[i] < a[j] && dir == 0)) {
-            int temp = a[i];
-            a[i] = a[j];
-            a[j] = temp;
-        }
+        return a;
     }
 
-    void bitonicMerge(int a[], int low, int cnt, int dir) {
-        if (cnt > 1) {
-            int k = cnt / 2;
-            for (int i = low; i < low + k; i++) {
-                compAndSwap(a, i, i + k, dir);
-            }
-            bitonicMerge(a, low, k, dir);
-            bitonicMerge(a, low + k, k, dir);
-        }
-    }
-
-    void bitonicSort(int a[], int low, int cnt, int dir) {
+    private void bitonicSort(Integer a[], int low, int cnt, int dir) {
         if (cnt > 1) {
             int k = cnt / 2;
             bitonicSort(a, low, k, 1);
@@ -36,20 +18,22 @@ public class Bitonic implements SortAlgorithm {
         }
     }
 
-    static void printArray(int arr[]) {
-        int n = arr.length;
-        for (int i = 0; i < n; ++i) {
-            System.out.print(arr[i] + " ");
+    private void compAndSwap(Integer a[], int i, int j, int dir) {
+        if ((a[i] > a[j] && dir == 1) || (a[i] < a[j] && dir == 0)) {
+            int temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
         }
-        System.out.println();
     }
 
-    public static void main(String args[]) {
-        int a[] = {3, 7, 4, 8, 6, 2, 1, 5};
-        int up = 1;
-        Bitonic ob = new Bitonic();
-        ob.sort(a, a.length, up);
-        System.out.println("\nSorted array");
-        printArray(a);
+    private void bitonicMerge(Integer a[], int low, int cnt, int dir) {
+        if (cnt > 1) {
+            int k = cnt / 2;
+            for (int i = low; i < low + k; i++) {
+                compAndSwap(a, i, i + k, dir);
+            }
+            bitonicMerge(a, low, k, dir);
+            bitonicMerge(a, low + k, k, dir);
+        }
     }
 }

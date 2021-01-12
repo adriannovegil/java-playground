@@ -31,12 +31,4 @@ public class Bogo implements SortAlgorithm {
             SortUtils.swap(array, randomIndex, i);
         }
     }
-
-    public static void main(String[] args) {
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Bogo bogoSort = new Bogo();
-        SortUtils.print(bogoSort.sort(integers));
-        String[] strings = {"c", "a", "e", "b", "d"};
-        SortUtils.print(bogoSort.sort(strings));
-    }
 }

@@ -1,7 +1,6 @@
 package com.devcircus.java.algorithms.sort.merge;
 
 import com.devcircus.java.algorithms.sort.SortAlgorithm;
-import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Merge implements SortAlgorithm {
 
@@ -40,15 +39,5 @@ class Merge implements SortAlgorithm {
         }
 
         System.arraycopy(temp, 0, arr, left, length);
-    }
-
-    public static void main(String[] args) {
-        Integer[] arr = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Merge mergeSort = new Merge();
-        mergeSort.sort(arr);
-        SortUtils.print(arr);
-        String[] stringArray = {"c", "a", "e", "b", "d"};
-        mergeSort.sort(stringArray);
-        SortUtils.print(stringArray);
     }
 }

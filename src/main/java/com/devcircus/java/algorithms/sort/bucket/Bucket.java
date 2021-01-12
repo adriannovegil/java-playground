@@ -4,11 +4,10 @@ import com.devcircus.java.algorithms.sort.SortAlgorithm;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Random;
 
 public class Bucket implements SortAlgorithm {
 
-    private static void sort(int[] arr) {
+    public Integer[] sort(Integer[] arr) {
         int max = max(arr);
         int min = min(arr);
         int numberOfBuckets = max - min + 1;
@@ -29,13 +28,14 @@ public class Bucket implements SortAlgorithm {
                 arr[index++] = value;
             }
         }
+        return arr;
     }
 
     private static int hash(int elem, int min, int numberOfBucket) {
         return (elem - min) / numberOfBucket;
     }
 
-    public static int max(int[] arr) {
+    private static int max(Integer[] arr) {
         int max = arr[0];
         for (int value : arr) {
             if (value > max) {
@@ -45,7 +45,7 @@ public class Bucket implements SortAlgorithm {
         return max;
     }
 
-    public static int min(int[] arr) {
+    private static int min(Integer[] arr) {
         int min = arr[0];
         for (int value : arr) {
             if (value < min) {
@@ -54,17 +54,4 @@ public class Bucket implements SortAlgorithm {
         }
         return min;
     }
-    
-    public static void main(String[] args) {
-        int[] arr = new int[10];
-        Random random = new Random();
-        for (int i = 0; i < arr.length; ++i) {
-            arr[i] = random.nextInt(100) - 50;
-        }
-        sort(arr);
-        for (int i = 0, limit = arr.length - 1; i < limit; ++i) {
-            assert arr[i] <= arr[i + 1];
-        }
-    }
-
 }

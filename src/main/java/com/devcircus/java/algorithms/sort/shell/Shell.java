@@ -23,10 +23,4 @@ public class Shell implements SortAlgorithm {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        Integer[] toSort = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        Shell sort = new Shell();
-        SortUtils.print(sort.sort(toSort));
-    }
 }

@@ -48,12 +48,4 @@ class Cycle implements SortAlgorithm {
         arr[pos] = temp;
         return item;
     }
-
-    public static void main(String[] args) {
-        Integer arr[] = {4, 23, 6, 78, 1, 26, 11, 23, 0, -6, 3, 54, 231, 9, 12};
-        Cycle cycleSort = new Cycle();
-        cycleSort.sort(arr);
-        System.out.println("After sort : ");
-        SortUtils.print(arr);
-    }
 }

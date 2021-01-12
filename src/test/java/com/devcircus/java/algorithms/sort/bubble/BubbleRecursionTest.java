@@ -1,5 +1,6 @@
 package com.devcircus.java.algorithms.sort.bubble;
 
+import com.devcircus.java.algorithms.sort.BaseSortTest;
 import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
@@ -8,31 +9,22 @@ import static org.junit.Assert.*;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-public class BubbleRecursionTest {
+public class BubbleRecursionTest extends BaseSortTest{
     
+    private BubbleRecursion sortter;
+            
     @Before
     public void setUp() {
+        sortter = new BubbleRecursion();
     }
     
     @Test
-    public void testSort() {
-        System.out.println("sort");
-        Comparable[] unsorted = null;
-        BubbleRecursion instance = new BubbleRecursion();
-        Comparable[] expResult = null;
-        Comparable[] result = instance.sort(unsorted);
-        assertArrayEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testSortWithIntegers() {
+        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
     }
 
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        BubbleRecursion.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testSortWithStrings() {
+        assertArrayEquals(sortter.sort(getStringArrayToSort()), getSortedStringArray());
     }
-    
 }

@@ -30,12 +30,4 @@ class CocktailShaker implements SortAlgorithm {
         }
         return array;
     }
-
-    public static void main(String[] args) {
-        Integer[] integers = {4, 23, 6, 78, 1, 54, 231, 9, 12};
-        CocktailShaker shakerSort = new CocktailShaker();
-        SortUtils.print(shakerSort.sort(integers));
-        String[] strings = {"c", "a", "e", "b", "d"};
-        SortUtils.print(shakerSort.sort(strings));
-    }
 }
