@@ -1,6 +1,7 @@
 package com.devcircus.java.algorithms.sort.bitonic;
 
 import com.devcircus.java.algorithms.sort.BaseSortTest;
+import java.util.Arrays;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -19,10 +20,18 @@ public class BitonicTest extends BaseSortTest{
     }
     
     @Test
-    public void testSortWithIntegers() {
-        Integer [] arrayToSort = getIntegerArrayToSort();
+    public void testSortWithIntegerArrayWith2NCompatibleNumberOfElements() {
+        Integer [] arrayToSort = getIntegersArrayWith2NCompatibleNumberOfElements();
         int arrayToSortLenght = arrayToSort.length;
         int up = 1;
-        assertArrayEquals(sortter.sort(arrayToSort, arrayToSortLenght, up), getSortedIntegerArray());
+        assertArrayEquals(sortter.sort(arrayToSort, arrayToSortLenght, up), getExpectedIntegersArrayWith2NCompatibleNumberOfElements());
+    }
+    
+    @Test
+    public void testSortWithoutIntegerArrayWith2NCompatibleNumberOfElements() {
+        Integer [] arrayToSort = getIntegersArrayWithout2NCompatibleNumberOfElements();
+        int arrayToSortLenght = arrayToSort.length;
+        int up = 1;
+        assertFalse(Arrays.equals(sortter.sort(arrayToSort, arrayToSortLenght, up), getExpectedIntegersArrayWithout2NCompatibleNumberOfElements()));
     }
 }

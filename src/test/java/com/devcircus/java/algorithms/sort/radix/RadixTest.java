@@ -20,8 +20,8 @@ public class RadixTest extends BaseSortTest{
     
     @Test
     public void testSortWithIntegers() {
-        Integer [] arrayToSort = getIntegerArrayToSort();
+        Integer [] arrayToSort = getIntegersArray();
         int arrayToSortLenght = arrayToSort.length;
-        assertArrayEquals(sortter.sort(arrayToSort, arrayToSortLenght), getSortedIntegerArray());
+        assertArrayEquals(sortter.sort(arrayToSort, arrayToSortLenght), getExpectedIntegersArray());
     }
 }

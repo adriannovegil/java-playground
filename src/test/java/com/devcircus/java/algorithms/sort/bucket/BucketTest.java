@@ -20,6 +20,6 @@ public class BucketTest extends BaseSortTest{
     
     @Test
     public void testSortWithIntegers() {
-        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
+        assertArrayEquals(sortter.sort(getIntegersArray()), getExpectedIntegersArray());
     }
 }

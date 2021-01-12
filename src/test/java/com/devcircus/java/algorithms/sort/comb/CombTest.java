@@ -20,11 +20,11 @@ public class CombTest extends BaseSortTest{
     
     @Test
     public void testSortWithIntegers() {
-        assertArrayEquals(sortter.sort(getIntegerArrayToSort()), getSortedIntegerArray());
+        assertArrayEquals(sortter.sort(getIntegersArray()), getExpectedIntegersArray());
     }
 
     @Test
     public void testSortWithStrings() {
-        assertArrayEquals(sortter.sort(getStringArrayToSort()), getSortedStringArray());
+        assertArrayEquals(sortter.sort(getStringsArray()), getExpectedStringsArray());
     }
 }

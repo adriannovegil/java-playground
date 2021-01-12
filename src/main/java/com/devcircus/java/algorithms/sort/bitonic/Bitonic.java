@@ -4,8 +4,8 @@ import com.devcircus.java.algorithms.sort.SortAlgorithm;
 
 public class Bitonic implements SortAlgorithm {
 
-    public Integer[] sort(Integer a[], int N, int up) {
-        bitonicSort(a, 0, N, up);
+    public Integer[] sort(Integer a[], int n, int up) {
+        bitonicSort(a, 0, n, up);
         return a;
     }
 

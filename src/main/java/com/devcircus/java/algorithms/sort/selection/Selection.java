@@ -10,20 +10,14 @@ public class Selection implements SortAlgorithm {
         for (int i = 0; i < n - 1; i++) {
             int min = i;
             for (int j = i + 1; j < n; j++) {
-                if (arr[min].compareTo(arr[j]) < 0) {
+                if (arr[min].compareTo(arr[j]) > 0) {
                     min = j;
                 }
             }
             if (min != i) {
-                swap(arr, i, min);
+                SortUtils.swap(arr, i, min);
             }
         }
         return arr;
-    }
-
-    public <T> void swap(T[] arr, int i, int j) {
-        T temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
     }
 }
