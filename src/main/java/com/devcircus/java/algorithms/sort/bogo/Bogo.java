@@ -8,7 +8,6 @@ public class Bogo implements SortAlgorithm {
 
     private static final Random random = new Random();
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         while (!isSorted(array)) {
             nextPermutation(array);

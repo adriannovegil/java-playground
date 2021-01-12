@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Merge implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] unsorted) {
         doSort(unsorted, 0, unsorted.length - 1);
         return unsorted;

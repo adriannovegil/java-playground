@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 public class Gnome implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] arr) {
         int i = 1;
         int j = 2;

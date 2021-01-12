@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class CocktailShaker implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         int length = array.length;
         int left = 0;

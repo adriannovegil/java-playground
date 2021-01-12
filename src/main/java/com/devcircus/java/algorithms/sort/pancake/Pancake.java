@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 public class Pancake implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         int size = array.length;
         for (int i = 0; i < size; i++) {

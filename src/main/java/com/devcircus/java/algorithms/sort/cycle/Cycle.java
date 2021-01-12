@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Cycle implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] arr) {
         int n = arr.length;
         for (int j = 0; j <= n - 2; j++) {

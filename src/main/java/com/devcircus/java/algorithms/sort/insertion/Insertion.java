@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Insertion implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         for (int j = 1; j < array.length; j++) {
             T key = array[j];

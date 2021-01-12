@@ -11,12 +11,10 @@ import java.util.stream.Stream;
 
 class Counting implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] unsorted) {
         return sort(Arrays.asList(unsorted)).toArray(unsorted);
     }
 
-    @Override
     public <T extends Comparable<T>> List<T> sort(List<T> list) {
         Map<T, Integer> frequency = new TreeMap<>();
         List<T> sortedArray = new ArrayList<>(list.size());

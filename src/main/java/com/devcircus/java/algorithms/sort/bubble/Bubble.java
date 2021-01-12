@@ -5,7 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Bubble implements SortAlgorithm {
 
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         for (int i = 0, size = array.length; i < size - 1; ++i) {
             boolean swapped = false;

@@ -4,6 +4,10 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
 
+/**
+ *
+ * @author Adrian Novegil <adrian.novegil@gmail.com>
+ */
 public class BitonicTest {
 
     @Before

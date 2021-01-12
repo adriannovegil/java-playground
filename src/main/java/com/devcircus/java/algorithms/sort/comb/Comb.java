@@ -5,12 +5,6 @@ import com.devcircus.java.algorithms.sort.SortUtils;
 
 class Comb implements SortAlgorithm {
 
-    private int nextGap(int gap) {
-        gap = (gap * 10) / 13;
-        return (gap < 1) ? 1 : gap;
-    }
-
-    @Override
     public <T extends Comparable<T>> T[] sort(T[] arr) {
         int size = arr.length;
         int gap = size;
@@ -25,6 +19,11 @@ class Comb implements SortAlgorithm {
             }
         }
         return arr;
+    }
+
+    private int nextGap(int gap) {
+        gap = (gap * 10) / 13;
+        return (gap < 1) ? 1 : gap;
     }
 
     public static void main(String[] args) {
