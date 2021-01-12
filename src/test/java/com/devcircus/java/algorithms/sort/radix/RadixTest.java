@@ -9,7 +9,7 @@ import org.junit.Before;
  *
  * @author Adrian Novegil <adrian.novegil@gmail.com>
  */
-class RadixTest extends BaseSortTest{
+public class RadixTest extends BaseSortTest{
 
     private Radix sortter;
     

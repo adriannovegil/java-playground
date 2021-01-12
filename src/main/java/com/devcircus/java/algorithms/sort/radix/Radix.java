@@ -23,7 +23,7 @@ class Radix implements SortAlgorithm {
         return mx;
     }
 
-    private static void countSort(Integer[] arr, int n, int exp) {
+    private void countSort(Integer[] arr, int n, int exp) {
         int[] output = new int[n];
         int i;
         int[] count = new int[10];
