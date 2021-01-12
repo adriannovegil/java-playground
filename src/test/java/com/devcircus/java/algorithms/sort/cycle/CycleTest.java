@@ -2,6 +2,7 @@ package com.devcircus.java.algorithms.sort.cycle;
 
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Before;
 
 /**
  *
@@ -9,6 +10,10 @@ import static org.junit.Assert.*;
  */
 public class CycleTest {
 
+    @Before
+    public void setUp() {
+    }
+    
     @Test
     public void testSortWithIntegers() {
         // TODO review the generated test code and remove the default call to fail.
