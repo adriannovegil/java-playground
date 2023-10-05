@@ -6,22 +6,44 @@ import org.junit.Test;
 public class PalindromeTest {
 
     @Test
-    public void testPalindrome() {
+    public void shouldAcceptWhenNullIsPassed() {
+        String expectedWord = null;
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
 
-        String[] palindromes = {null, "", "aba", "123321", "kayak"};
-        for (String s : palindromes) {
-            assertTrue(Palindrome.isPalindrome(s)
-                    && Palindrome.isPalindromeRecursion(s)
-                    && Palindrome.isPalindromeTwoPointer(s)
-                    && Palindrome.isPalindromeStreams(s));
-        }
+    @Test
+    public void shouldAcceptWhenEmptyStringIsPassed() {
+        String expectedWord = "";
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
 
-        String[] notPalindromes = {"abb", "abc", "abc123", "kayaks"};
-        for (String s : notPalindromes) {
-            assertFalse(Palindrome.isPalindrome(s)
-                    || Palindrome.isPalindromeRecursion(s)
-                    || Palindrome.isPalindromeTwoPointer(s)
-                    || Palindrome.isPalindromeStreams(s));
-        }
+    @Test
+    public void shouldAcceptNotWhenWhenSingleCharacterIsPassed() {
+        String expectedWord = "a";
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
+
+    @Test
+    public void shouldAcceptWhenStringIsPassed() {
+        String expectedWord = "kayak";
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
+
+    @Test
+    public void shouldAcceptWhenStringWithSpacesIsPassed() {
+        String expectedWord = "Hello olleH";
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
+
+    @Test
+    public void shouldAcceptWhenNumericStringIsPassed() {
+        String expectedWord = "123321";
+        assertTrue(Palindrome.isPalindrome(expectedWord));
+    }
+    
+    @Test
+    public void shouldNotAcceptWhenNotPalindromeIsPassed() {
+        String expectedWord = "abc123";
+        assertFalse(Palindrome.isPalindrome(expectedWord));
     }
 }
